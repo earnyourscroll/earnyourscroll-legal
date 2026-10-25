@@ -1,0 +1,239 @@
+<title>EarnYourScroll Privacy Policy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+  /* Layout: single-column legal document, sticky section nav collapses to a top bar on phones */
+  :root{
+    --bg:#fbfaf7; --surface:#ffffff; --border:#e4e1d8; --fg:#1d1b16; --fg-muted:#5c5848;
+    --accent:#2f5d50; --accent-soft:#e7efe8; --link:#2f5d50;
+    --font-display:'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --font-body:'Source Serif 4', Georgia, serif;
+    --font-ui:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#14160f; --surface:#1b1d16; --border:#33352a; --fg:#eeece2; --fg-muted:#a8a593;
+      --accent:#7fb89c; --accent-soft:#1f2b22; --link:#7fb89c; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#14160f; --surface:#1b1d16; --border:#33352a; --fg:#eeece2; --fg-muted:#a8a593;
+    --accent:#7fb89c; --accent-soft:#1f2b22; --link:#7fb89c; color-scheme: dark;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--fg); font-family:var(--font-body);
+    padding-left:max(16px, env(safe-area-inset-left,0px));
+    padding-right:max(16px, env(safe-area-inset-right,0px));
+  }
+  .wrap{max-width:760px; margin:0 auto; padding-block:48px 80px;}
+  .eyebrow{
+    font-family:var(--font-ui); font-size:12px; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--accent); font-weight:600; margin:0 0 10px;
+  }
+  h1{
+    font-family:var(--font-display); font-weight:600; font-size:clamp(28px,5vw,38px);
+    line-height:1.15; margin:0 0 8px; text-wrap:balance;
+  }
+  .meta{font-family:var(--font-ui); font-size:13px; color:var(--fg-muted); margin:0 0 36px;}
+  .meta strong{color:var(--fg); font-weight:600;}
+
+  .toc{
+    background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:18px 20px; margin-bottom:40px;
+  }
+  .toc-label{font-family:var(--font-ui); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--fg-muted); margin:0 0 10px; font-weight:600;}
+  .toc ol{margin:0; padding-left:20px; columns:2; column-gap:24px; font-family:var(--font-ui); font-size:14px;}
+  .toc li{margin-bottom:6px; break-inside:avoid;}
+  .toc a{color:var(--link); text-decoration:none;}
+  .toc a:hover{text-decoration:underline;}
+  @media (max-width:520px){ .toc ol{columns:1;} }
+
+  section{margin-bottom:34px; scroll-margin-top:20px;}
+  h2{
+    font-family:var(--font-display); font-weight:600; font-size:21px;
+    margin:0 0 12px; display:flex; align-items:baseline; gap:10px;
+  }
+  h2 .num{font-family:var(--font-ui); font-size:13px; color:var(--accent); font-weight:700;}
+  p{font-size:16px; line-height:1.65; max-width:65ch; margin:0 0 14px; color:var(--fg);}
+  p.muted{color:var(--fg-muted); font-size:14px;}
+  ul{margin:0 0 14px; padding-left:22px; max-width:65ch;}
+  li{font-size:16px; line-height:1.6; margin-bottom:8px;}
+  strong{font-weight:600;}
+
+  .table{border:1px solid var(--border); border-radius:12px; overflow:hidden; margin-bottom:14px; background:var(--surface);}
+  .row{display:grid; grid-template-columns:1fr 1.4fr; gap:16px; padding:14px 18px; border-bottom:1px solid var(--border);}
+  .row:last-child{border-bottom:none;}
+  .row .k{font-family:var(--font-ui); font-size:13px; font-weight:600; color:var(--fg);}
+  .row .v{font-family:var(--font-ui); font-size:13px; color:var(--fg-muted); line-height:1.55;}
+  @media (max-width:520px){ .row{grid-template-columns:1fr;} }
+
+  .callout{
+    background:var(--accent-soft); border:1px solid var(--border); border-radius:12px;
+    padding:16px 18px; margin:16px 0; font-family:var(--font-ui); font-size:14px; color:var(--fg); line-height:1.6;
+  }
+  .contact{
+    background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:22px; margin-top:8px;
+  }
+  .contact .addr{font-family:var(--font-ui); font-size:17px; font-weight:600; color:var(--accent); user-select:all;}
+  .copy-btn{
+    font-family:var(--font-ui); font-size:12px; font-weight:600; color:var(--accent);
+    background:transparent; border:1px solid var(--border); border-radius:8px;
+    padding:6px 12px; cursor:pointer; margin-left:10px;
+  }
+  .copy-btn:hover{background:var(--accent-soft);}
+  hr{border:none; border-top:1px solid var(--border); margin:40px 0;}
+  footer{font-family:var(--font-ui); font-size:13px; color:var(--fg-muted);}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<div class="wrap">
+  <p class="eyebrow">Privacy Policy</p>
+  <h1>EarnYourScroll</h1>
+  <p class="meta">Effective and last updated: <strong>October 25, 2026</strong> &nbsp;·&nbsp; Applies to the EarnYourScroll Android app</p>
+
+  <nav class="toc">
+    <p class="toc-label">On this page</p>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#collect">Information we collect</a></li>
+      <li><a href="#camera">Camera &amp; exercise tracking</a></li>
+      <li><a href="#accessibility">Accessibility permission</a></li>
+      <li><a href="#use">How we use your information</a></li>
+      <li><a href="#share">How we share information</a></li>
+      <li><a href="#storage">Data storage &amp; security</a></li>
+      <li><a href="#retention">Data retention &amp; deletion</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#rights">Your choices &amp; rights</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <h2><span class="num">01</span> Overview</h2>
+    <p>EarnYourScroll ("EYS," "we," "us") is an Android app that helps you build a healthier relationship with your phone: it asks for a short physical exercise — pushups, squats, a timed plank, or a mindful breathing break — before letting you open apps you've chosen to restrict. This policy explains what information the app collects, why, and how you can control or delete it.</p>
+    <p>We built EarnYourScroll to require as little personal information as possible. There are no ads and no third-party trackers in the app today. If that changes, we'll update this policy and the in-app notice before it happens.</p>
+  </section>
+
+  <section id="collect">
+    <h2><span class="num">02</span> Information we collect</h2>
+    <div class="table">
+      <div class="row"><div class="k">Account information</div><div class="v">If you sign in with Google, we receive your name and email address from Google to create your account. You can also use the app anonymously without creating an account — we then assign a random, non-identifying device ID.</div></div>
+      <div class="row"><div class="k">Onboarding answers</div><div class="v">The first name you enter, your companion character choice, your stated daily screen-time estimate, and your stated goal/aspiration.</div></div>
+      <div class="row"><div class="k">Restricted apps list</div><div class="v">Which apps on your device you've chosen to restrict (e.g. Instagram, TikTok), and any feature-level settings you pick for them.</div></div>
+      <div class="row"><div class="k">App usage data (optional)</div><div class="v">If you grant the optional Usage Access permission, the app reads how much time you've recently spent in each app directly from Android, to suggest which apps to restrict. This number is read live from your device each time it's needed and is never sent to our servers or stored in your account.</div></div>
+      <div class="row"><div class="k">Workout history</div><div class="v">A record of exercises you complete — type, rep count, duration, and timestamp — and the "Edge" coins you earn from them.</div></div>
+      <div class="row"><div class="k">Push notification token</div><div class="v">A device token used to send you reminder notifications. We don't use this for anything else.</div></div>
+    </div>
+    <p class="muted">We do not collect your precise location, contacts, photos, messages, or browsing content from other apps.</p>
+  </section>
+
+  <section id="camera">
+    <h2><span class="num">03</span> Camera &amp; exercise tracking</h2>
+    <p>For pushups and squats, EarnYourScroll uses your device's camera to count your reps through on-device pose detection (Google ML Kit). This processing happens entirely on your phone:</p>
+    <ul>
+      <li>Camera frames are analyzed in memory, one at a time, and discarded immediately after each frame is processed.</li>
+      <li>No photo, video, or image frame is ever saved to your device's storage, uploaded, or transmitted anywhere.</li>
+      <li>Only the result of that processing — a numeric rep count — is saved as part of your workout history.</li>
+    </ul>
+    <div class="callout">We verified this directly in the app's code: the exercise-tracking screens only use CameraX's live-preview and frame-analysis features, with no capture or recording feature wired up anywhere, and every frame is explicitly released right after it's analyzed.</div>
+  </section>
+
+  <section id="accessibility">
+    <h2><span class="num">04</span> Accessibility permission</h2>
+    <p>EarnYourScroll asks for Android's Accessibility Service permission to detect the single moment when you open an app you've chosen to restrict, so it can show the exercise prompt. This permission is used for that purpose only:</p>
+    <ul>
+      <li>We don't read, log, or store the content of your screen, your keystrokes, or any other app's data.</li>
+      <li>The service only checks which app package has come to the foreground — nothing else.</li>
+    </ul>
+  </section>
+
+  <section id="use">
+    <h2><span class="num">05</span> How we use your information</h2>
+    <ul>
+      <li>To run the core feature: detecting a restricted app and unlocking it once you've completed an exercise.</li>
+      <li>To track your streaks, Edge coin balance, and progress over time, and show them back to you.</li>
+      <li>To keep your data in sync if you use the app on more than one device.</li>
+      <li>To send you reminder notifications, if you've allowed them.</li>
+      <li>To fix bugs and improve the app.</li>
+    </ul>
+    <p>We do not use your information to serve ads, and we do not sell your information.</p>
+  </section>
+
+  <section id="share">
+    <h2><span class="num">06</span> How we share information</h2>
+    <p>We don't sell or rent your information. We share it only with the service providers that make the app work, each bound to process it only on our behalf:</p>
+    <div class="table">
+      <div class="row"><div class="k">Supabase</div><div class="v">Our backend database and authentication provider. Stores your account, workout history, and restricted-apps list.</div></div>
+      <div class="row"><div class="k">Google Sign-In</div><div class="v">If you choose to sign in with Google, Google processes that authentication. See Google's own privacy policy for how they handle it.</div></div>
+    </div>
+    <p>We may also disclose information if required by law, or to protect the rights, safety, or property of EarnYourScroll or our users.</p>
+  </section>
+
+  <section id="storage">
+    <h2><span class="num">07</span> Data storage &amp; security</h2>
+    <p>Your account data is stored with Supabase, encrypted in transit over HTTPS. Database access is restricted with row-level security rules so that your data is readable only by your own authenticated account — we tested this directly, including attempts to read one account's data using another account's credentials, and confirmed it's blocked.</p>
+  </section>
+
+  <section id="retention">
+    <h2><span class="num">08</span> Data retention &amp; deletion</h2>
+    <p>We keep your account data for as long as your account is active. You can permanently delete your account and all associated data at any time:</p>
+    <ul>
+      <li><strong>In the app:</strong> Settings → Delete Account → type DELETE to confirm.</li>
+      <li><strong>By email:</strong> contact us at the address below and we'll delete it for you.</li>
+    </ul>
+    <p>Deletion removes your profile, workout history, and restricted-apps list from our systems. This is permanent and can't be undone.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">09</span> Children's privacy</h2>
+    <p>EarnYourScroll is not directed at children under 13, and we don't knowingly collect information from children under 13. If you believe a child has provided us information, contact us and we'll delete it.</p>
+  </section>
+
+  <section id="rights">
+    <h2><span class="num">10</span> Your choices &amp; rights</h2>
+    <ul>
+      <li>You can use the app anonymously, without a Google account.</li>
+      <li>Usage Access and notification permissions are optional and can be turned off in your device's system settings at any time.</li>
+      <li>You can request a copy of your data, or ask us to correct or delete it, by emailing us.</li>
+      <li>You can revoke the Accessibility permission at any time in Android Settings — EYS will simply stop detecting restricted apps until it's re-granted.</li>
+    </ul>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">11</span> Changes to this policy</h2>
+    <p>If we make material changes to this policy, we'll update the date at the top of this page and, where appropriate, notify you in the app.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">12</span> Contact us</h2>
+    <p>Questions about this policy, or a request about your data?</p>
+    <div class="contact">
+      <span class="addr" id="email-addr">earnyourscroll@gmail.com</span>
+      <button class="copy-btn" id="copy-btn" onclick="copyEmail()">Copy</button>
+    </div>
+  </section>
+
+  <hr>
+  <footer>EarnYourScroll — this page is the privacy policy linked from the app's Google Play Store listing and in-app Settings.</footer>
+</div>
+
+<script>
+function copyEmail(){
+  var text = document.getElementById('email-addr').textContent;
+  var btn = document.getElementById('copy-btn');
+  function done(ok){ btn.textContent = ok ? 'Copied' : 'Copy'; setTimeout(function(){ btn.textContent='Copy'; }, 1500); }
+  try{
+    navigator.clipboard.writeText(text).then(function(){done(true);}).catch(function(){
+      var r = document.createRange(); r.selectNode(document.getElementById('email-addr'));
+      window.getSelection().removeAllRanges(); window.getSelection().addRange(r); done(false);
+    });
+  }catch(e){
+    var r = document.createRange(); r.selectNode(document.getElementById('email-addr'));
+    window.getSelection().removeAllRanges(); window.getSelection().addRange(r); done(false);
+  }
+}
+</script>
