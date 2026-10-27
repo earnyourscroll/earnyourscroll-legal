@@ -1,0 +1,111 @@
+<title>EarnYourScroll Account Deletion</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+  :root{
+    --bg:#fbfaf7; --surface:#ffffff; --border:#e4e1d8; --fg:#1d1b16; --fg-muted:#5c5848;
+    --accent:#2f5d50; --accent-soft:#e7efe8; --link:#2f5d50; --danger:#a13c2e; --danger-soft:#f7eae7;
+    --font-display:'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --font-body:'Source Serif 4', Georgia, serif;
+    --font-ui:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#14160f; --surface:#1b1d16; --border:#33352a; --fg:#eeece2; --fg-muted:#a8a593;
+      --accent:#7fb89c; --accent-soft:#1f2b22; --link:#7fb89c; --danger:#e08b7a; --danger-soft:#2b1f1c;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#14160f; --surface:#1b1d16; --border:#33352a; --fg:#eeece2; --fg-muted:#a8a593;
+    --accent:#7fb89c; --accent-soft:#1f2b22; --link:#7fb89c; --danger:#e08b7a; --danger-soft:#2b1f1c;
+    color-scheme: dark;
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--fg); font-family:var(--font-body); margin:0;
+    padding-left:16px; padding-right:16px;
+  }
+  .wrap{max-width:680px; margin:0 auto; padding-top:48px; padding-bottom:80px;}
+  .eyebrow{font-family:var(--font-ui); font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); font-weight:600; margin:0 0 10px;}
+  h1{font-family:var(--font-display); font-weight:600; font-size:clamp(26px,5vw,34px); line-height:1.15; margin:0 0 8px;}
+  .meta{font-family:var(--font-ui); font-size:13px; color:var(--fg-muted); margin:0 0 36px;}
+  h2{font-family:var(--font-display); font-weight:600; font-size:19px; margin:34px 0 12px;}
+  p{font-size:16px; line-height:1.65; max-width:65ch; margin:0 0 14px;}
+  ol,ul{margin:0 0 14px; padding-left:22px; max-width:65ch;}
+  li{font-size:16px; line-height:1.6; margin-bottom:10px;}
+  strong{font-weight:600;}
+  .steps{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:22px 24px;}
+  .warn{background:var(--danger-soft); border:1px solid var(--border); border-radius:12px; padding:16px 18px; margin:16px 0; font-family:var(--font-ui); font-size:14px; color:var(--fg); line-height:1.6;}
+  .warn strong{color:var(--danger);}
+  .table{border:1px solid var(--border); border-radius:12px; overflow:hidden; margin-bottom:14px; background:var(--surface);}
+  .row{display:grid; grid-template-columns:1fr 1.4fr; gap:16px; padding:14px 18px; border-bottom:1px solid var(--border);}
+  .row:last-child{border-bottom:none;}
+  .row .k{font-family:var(--font-ui); font-size:13px; font-weight:600;}
+  .row .v{font-family:var(--font-ui); font-size:13px; color:var(--fg-muted); line-height:1.55;}
+  @media (max-width:520px){ .row{grid-template-columns:1fr;} }
+  .contact{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:22px; margin-top:8px;}
+  .contact .addr{font-family:var(--font-ui); font-size:17px; font-weight:600; color:var(--accent); user-select:all;}
+  .copy-btn{font-family:var(--font-ui); font-size:12px; font-weight:600; color:var(--accent); background:transparent; border:1px solid var(--border); border-radius:8px; padding:6px 12px; cursor:pointer; margin-left:10px;}
+  .copy-btn:hover{background:var(--accent-soft);}
+  hr{border:none; border-top:1px solid var(--border); margin:40px 0;}
+  footer{font-family:var(--font-ui); font-size:13px; color:var(--fg-muted);}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<div class="wrap">
+  <p class="eyebrow">Account Deletion</p>
+  <h1>EarnYourScroll</h1>
+  <p class="meta">Last updated: <strong>October 26, 2026</strong></p>
+
+  <p>You can permanently delete your EarnYourScroll account and all the data tied to it at any time, in two ways.</p>
+
+  <h2>Option 1 — In the app</h2>
+  <div class="steps">
+    <ol>
+      <li>Open EarnYourScroll and go to <strong>Settings</strong></li>
+      <li>Tap <strong>Delete Account</strong></li>
+      <li>Type <strong>DELETE</strong> in the confirmation field</li>
+      <li>Tap <strong>Delete my account</strong>, then confirm on the final dialog</li>
+    </ol>
+  </div>
+  <p>Deletion happens immediately and cannot be undone.</p>
+
+  <h2>Option 2 — By email</h2>
+  <p>If you can't access the app, email us from the address associated with your account and we'll delete it for you within a few business days.</p>
+  <div class="contact">
+    <span class="addr" id="email-addr">earnyourscroll@gmail.com</span>
+    <button class="copy-btn" id="copy-btn" onclick="copyEmail()">Copy</button>
+  </div>
+
+  <h2>What gets deleted</h2>
+  <div class="table">
+    <div class="row"><div class="k">Account &amp; profile</div><div class="v">Your sign-in record, display name, and companion selection — deleted.</div></div>
+    <div class="row"><div class="k">Workout history</div><div class="v">All logged exercises, rep counts, and Edge coin balance — deleted.</div></div>
+    <div class="row"><div class="k">Restricted apps list</div><div class="v">Which apps you chose to restrict and their settings — deleted.</div></div>
+  </div>
+  <div class="warn"><strong>This is permanent.</strong> Once deleted, this data cannot be recovered or restored, and a new account starts from zero.</div>
+
+  <h2>Timing</h2>
+  <p>In-app deletion is immediate. Email requests are processed within a few business days of us confirming it's really you.</p>
+
+  <hr>
+  <footer>EarnYourScroll — this page is the account-deletion path required by Google Play, linked from the app's Store listing and in-app Settings.</footer>
+</div>
+
+<script>
+function copyEmail(){
+  var text = document.getElementById('email-addr').textContent;
+  var btn = document.getElementById('copy-btn');
+  function done(ok){ btn.textContent = ok ? 'Copied' : 'Copy'; setTimeout(function(){ btn.textContent='Copy'; }, 1500); }
+  try{
+    navigator.clipboard.writeText(text).then(function(){done(true);}).catch(function(){
+      var r = document.createRange(); r.selectNode(document.getElementById('email-addr'));
+      window.getSelection().removeAllRanges(); window.getSelection().addRange(r); done(false);
+    });
+  }catch(e){
+    var r = document.createRange(); r.selectNode(document.getElementById('email-addr'));
+    window.getSelection().removeAllRanges(); window.getSelection().addRange(r); done(false);
+  }
+}
+</script>
